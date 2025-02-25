@@ -1,1 +1,0 @@
-It seems like you might have forgotten to ask a question or say something! That's okay, I'm here to listen and help with any questions you might have. Would you like to start a conversation or ask me something?
