@@ -11,8 +11,10 @@ FILENAME="day-$DAY_NUM.md"
 
 # Get project idea from Ollama
 echo "🧠 Fetching project idea..."
-RESPONSE=$(ollama run mistral "Give me a detailed project to complete today (related to software development) in markdown format")
-
+$PROMPT="give me an advanced project idea to complete today related to any field in software engineering (full details in markdown format)"
+RESPONSE=$(docker exec -it ollama ollama run llama3  $PROMPT)
+#you can use ollama directly instead of docker
+#ollama run mistral $PROMPT
 # Save the response
 echo "$RESPONSE" > "$FILENAME"
 echo "✅ Response saved to $FILENAME"
