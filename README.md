@@ -1,1 +1,0 @@
-# daily-project-idea
